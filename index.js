@@ -1,6 +1,6 @@
 const cards = document.querySelector('.card');
 
-url = 'https://randomuser.me/api/?seed=javascript&results=3&nat=BR&noinfo';
+url = 'https://randomuser.me/api/?seed=javascript&results=20&nat=BR&noinfo';
 
 
 async function authors() {

@@ -18,13 +18,21 @@ for (let author of authors) {
     totalA += author.dob.age;
 
 }
-    mediaA = totalA/authors.length
+mediaA = Math.round(totalA / authors.length);
 
 const html = `
+                    <h3>Número Total de Mulheres</h3>
                             <p>${totalF}</p> 
+                                <br>
+                    <h3>Número Total de Homens</h3>
                             <p>${totalM}</p>
-                            <p>${totalA}</p> 
-                            <p>${mediaA}</p> 
+                                <br>
+                    <h3>Número Total de Idades</h3>
+                            <p>${totalA}</p>
+                                <br>
+                    <h3>Média Total de Idades</h3>
+                            <p>${mediaA}</p>
+                                <br> 
             `;
 const div = document.createElement('li');
 div.innerHTML = html;
